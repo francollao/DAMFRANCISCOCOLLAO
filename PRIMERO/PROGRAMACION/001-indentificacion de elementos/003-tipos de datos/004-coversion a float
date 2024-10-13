@@ -1,0 +1,10 @@
+edad = "54"
+empujon = "5"
+
+edad = float(edad)   
+empujon = float(empujon)
+
+print ("Mi edad más empujon es: ")
+print (edad+empujon) 
+
+#en vez de converti a entero, convertimos a decimal y entonces nos da el dato con un decimal en este caso = 59.0
