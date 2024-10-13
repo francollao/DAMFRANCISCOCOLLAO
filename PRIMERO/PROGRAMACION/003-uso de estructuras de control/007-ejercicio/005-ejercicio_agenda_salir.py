@@ -6,9 +6,13 @@
 
 TITULO = "PROGRAMA AGENDA"
 AUTOR = "FRAN COLLAO"
+
+
 print(TITULO,"por",AUTOR)
 
+
 #ESTRUCUTURA DE EJECUCION INFINITA ############
+
 while(True):
 
     #Menu principal #######################

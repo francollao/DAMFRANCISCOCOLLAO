@@ -24,6 +24,7 @@ operando2 = input("Introduce el segundo operando")
 operador = input("Introduce el segundo operador (+-*/)")
 #conversiones de los datos a tratar 
 
+
 operando1 = int(operando1)
 operando2 = int(operando2)
 #toma de deciciones segun el usuario desee

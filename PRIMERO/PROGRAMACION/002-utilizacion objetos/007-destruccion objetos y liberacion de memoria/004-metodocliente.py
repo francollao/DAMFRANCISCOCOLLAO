@@ -6,6 +6,8 @@ class Cliente:
          self.email = nuevoemail
          self.telefono = nuevotelefono
          #atencion: no insertar el metodo dentro del constructor.
+         
+
      def dameDatos(self):
              print("Nombre: ",self.nombre, "- Apellidos: ",self.apellidos,
                    "-telefono: ",self.telefono, "- Mail: ",self.email)

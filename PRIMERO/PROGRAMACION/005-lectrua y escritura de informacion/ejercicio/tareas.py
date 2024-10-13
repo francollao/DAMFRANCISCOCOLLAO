@@ -1,16 +1,16 @@
+'''
+    Programa agenda
+    (c) 2024 Fran collao
 
 '''
 
-FRAN COLLAO ℗ 
-PROGRAMA PARA VER TUS TAREAS IMPORTANTES 
+import os       #importamos 
+
+TITULO = "PROGRAMA AGENDA"
+AUTOR = "FRAN COLLAO"
+print(TITULO,"por",AUTOR)
 
 
-
-
-'''
-
-
-import os
 try:
     os.makedirs("TareasSemanales")
 except:
@@ -22,6 +22,7 @@ while(True):
     print("****Seleciona una de las siguientes opciones****")
     print("1. -Introducir Acontecimiento")
     print("2. -Leer Acontecimientos de día")
+    print("3. -SALIR")
 
     opcion = input("Selecione una opcion: ")
 
@@ -139,7 +140,12 @@ while(True):
                 print("No Hay nada planificado para este dia")
         else: 
              print("Ese numero no esta disponible")
-     
+
+
+    elif opcion == "3":
+        print("HASTA LUEGO :)")
+        exit()
+
 
     else:
             print("la opcion que has elegido no es válida")
