@@ -1,0 +1,11 @@
+cliente1:
+
+nombre: fran
+telefono: 46522465
+mail : fran@gmal.com
+
+cliente2:
+
+nombre: pepe
+telefono: 6548632468
+mail : pepe@gmal.com

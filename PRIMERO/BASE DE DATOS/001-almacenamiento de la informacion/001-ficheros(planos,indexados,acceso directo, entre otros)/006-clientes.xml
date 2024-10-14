@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <nombre>
+            Fran 
+        </nombre>
+        <apellidos>
+            Collao
+        </apellidos>
+        <telefono>
+            60107595
+        </telefono>
+        <email>
+            franciscojaviercollaocuellar@gmail.com
+        </email>
+
+        <ciudad>
+            Torrent
+        </ciudad>
+    </cliente>
+    <cliente>
+        <nombre>
+            Antonio
+        </nombre>
+        <apellidos>
+            Perez
+        </apellidos>
+        <telefono>
+            6436456
+        </telefono>
+        <email>
+            antonioperez@gmail.com
+        </email>
+
+        <ciudad>
+            Mislata
+        </ciudad>
+    </cliente>
+</clientes>
