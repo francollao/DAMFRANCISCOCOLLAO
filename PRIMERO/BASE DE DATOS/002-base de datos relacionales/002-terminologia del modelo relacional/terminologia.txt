@@ -1,0 +1,6 @@
+-El sistema de gestion de base de es la entidad de nivel superior
+- EL SG BBDD contiene base de datos
+- la base de datos contiene tablas 
+- las tablas contien columnas
+-las tablas contienen registros(tuplas)
+- las columnas tienen tipo de datos y longitud de datos

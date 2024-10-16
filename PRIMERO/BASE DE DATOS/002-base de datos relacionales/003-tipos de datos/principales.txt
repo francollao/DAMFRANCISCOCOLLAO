@@ -1,0 +1,58 @@
+** 4 tipos principales **
+
+VARCHAR  -cadenas de texto cortas
+
+TEXT -cadenas de texto largas
+
+INT - numeros enteros
+
+DATE  - fecha
+
+**NUMERICOS**:
+TINYINT -1B
+SMALLINT 2B
+MEDIUMINT -3B
+INT -4B
+BIGINT -8B
+
+******
+DECIMAL
+FLOAT 
+DOUBLE 
+REAL 
+
+BIT-1BIT
+BOOLEAN 1BIT
+
+SERIAL
+
+DATE  YYYY/MM/SS
+DATETIME  YYYY/MM/SS HH:MM:SS 
+
+YEAR YYYY
+
+***********
+CHAR 
+VARCHAR
+TINYTEXT
+MEDIUMTEXT
+LONGTEXT
+
+***********
+BINARY
+VARBINARY
+
+*******
+TINYBLOB -255B
+BLOB -64KB
+MEIDUMBLOB -16MG
+LONGBLOB -4GB
+
+***
+
+ENUM - lista de posibilidades
+SET - conjunto de datos
+************
+GEOMETRY
+*******
+JSON (TIENE SOPORTE NATIVOS PARA SOPORTAR JSON)

@@ -1,0 +1,26 @@
+EMPRESA
+--------------
+---------------
+EMPLEADOS
+----------------
+ 
+nombre	varchar20,
+apellidos varchar 30
+mail,	varchar 40
+telefono int
+
+
+------------------------
+PRODUCTOS
+---------------------
+nº de serie,	int
+ nombre,	varchar50
+descripcion, varchar500
+peso,	float
+precio	float
+
+---------------------
+OFERTAS
+---------------------
+
+Fecha de inicio, fecha de fin, porcentaje fijo
