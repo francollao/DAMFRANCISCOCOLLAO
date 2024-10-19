@@ -1,0 +1,3 @@
+ALTER TABLE `lineaspedido` ADD 
+FOREIGN KEY (`pedidos_fecha`) REFERENCES `pedidos`(`id`)
+ ON DELETE RESTRICT ON UPDATE RESTRICT;
