@@ -21,7 +21,7 @@ class Persona:
         return self.edad
 
      def setEdad(self,nuevaedad):
-         if nuevaedad == self.edad + 1:
+         if nuevaedad == self.edad +1:
             self.edad = nuevaedad
          else:
              print("operacion no permitida")

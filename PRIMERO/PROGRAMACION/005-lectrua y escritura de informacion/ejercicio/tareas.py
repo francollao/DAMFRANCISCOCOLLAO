@@ -8,7 +8,7 @@ import os       #importamos
 
 TITULO = "PROGRAMA AGENDA"
 AUTOR = "FRAN COLLAO"
-print(TITULO,"por",AUTOR)
+print(TITULO,"por",AUTOR) 
 
 
 try:

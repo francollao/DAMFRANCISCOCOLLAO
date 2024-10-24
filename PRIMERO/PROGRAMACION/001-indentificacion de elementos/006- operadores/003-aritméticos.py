@@ -9,3 +9,4 @@ edad *=5
 print ("mi edad es de", edad, "años ")
 edad /=5
 print ("mi edad es de", edad, "años ")
+
