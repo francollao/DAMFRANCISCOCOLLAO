@@ -1,2 +1,3 @@
 import sqlite3
-conexion =  sqlite3.connect('empresa.db')
+conexion =  sqlite3.connect('empresa.db') 
+

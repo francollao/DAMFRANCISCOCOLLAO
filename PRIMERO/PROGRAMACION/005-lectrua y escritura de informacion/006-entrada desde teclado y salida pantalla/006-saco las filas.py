@@ -20,4 +20,4 @@ cursor.execute(peticion)  #en el cursor,ejecuto la peticion
 filas = cursor.fetchall()   #en una variable llamada filas almaceno los resultados que de la bdd
 for fila in filas:
     print(fila)     #como filas representa a todas las fila, quiero coger una a una
-        #imprimo cada fila
+        #imprimo cada fila 

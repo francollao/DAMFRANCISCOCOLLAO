@@ -44,26 +44,20 @@ while True:
         cursor.execute(peticion)
         conexion.commit()
     elif opcion =="2":
-        print("Vamos a leer los clientes")
-        peticion = "SELECT * from clientes;"
-        cursor = conexion.cursor()
-        cursor.execute(peticion)
-        filas = cursor.fetchall()
-        for fila in filas:
-            print("######################################")
-            print("El id es: ",fila[0])
-            print("El nombre completo es: ",fila[1])
-            print("El mail es: ",fila[2])
-            print("La poblacion es: ",fila[3])
-            print("La fecha de nacimiento del cliente es: ",fila[4])
+        print("Vamos a leer los clientes ")
 
     elif opcion =="3":
         print("Vamos a actualizar clientes")
+        #se muestran los clientes y que el usuario seleccione la id del cliente que desee actualizar
+        idopcion = input("Seleciona la id del cliente que deseas borrar")
+        
+        peticion = "DELETE from Clientes WHERE id=="+idopcion+""
     elif opcion =="4":
         print("Vamos a eliminar un cliente ")
-        #listamos todos los clientes y que el usuario elija el cliente que desea borrar mediante la id
-        idopcion = input("Seleccione la id del cliente que desea borrar: ")
-        peticion = "DELETE from clientes WHERE id="+idopcion+";"
+        #se listan todos los clientes y se da a elegir que cliente hay que borrar mendiante su id
+
+        idopcion = input("Seleciona la id del cliente que deseas borrar")
+        peticion = "DELETE from Clientes WHERE id=="+idopcion+""
     elif opcion =="5":
         exit()
 
