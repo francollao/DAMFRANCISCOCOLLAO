@@ -3,9 +3,9 @@ import mysql.connector                                  # Importo el conector de
 
 conexion = mysql.connector.connect(
     host="localhost",           
-    user="examenprogramacion",        
-    password="examenprogramacion",   
-    database="examenprogramacion"    
+    user="expr",        
+    password="expr",   
+    database="expr"    
 )                                                       # Me conecto a la base de datos  que he creadp utf8mb4_sp_ci
                                                         #creo privilegios creando cuenta de usuario llamada exmprog
 

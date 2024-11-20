@@ -59,7 +59,7 @@ while True:
             print("nombre: "+cliente.nombre)
             print("apellidos: "+cliente.apellidos)
             print("email: "+cliente.email)
-            contador+= 1
+            
 
     
     elif opcion == "3":

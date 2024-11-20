@@ -3,7 +3,7 @@ from flask import Flask #importamos libreria que permite crear miniservidor web
 aplicacion = Flask(__name__) #creo servidor web
 
 servidor = "localhost"          #creo variable que apunta mi servidor 
-usuario = "miempresa"       #variable para almacenar mi usuario anteriormente creado
+usuario = "ex"       #variable para almacenar mi usuario anteriormente creado
 contrasena = "miempresa"    ##lo mismo con los siguientes datos 
 base_de_datos = "miempresa"
 

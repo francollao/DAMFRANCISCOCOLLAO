@@ -14,7 +14,7 @@ class Productos:
         self.precio = nuevoprecio
 
 print("Programa de Consola")
-print("v0.1 por Jose Vicente Carratala")
+print("v0.1 por Franc collao")
 
 print("Selecciona entidad")
 print("1.-Clientes")

@@ -1,0 +1,7 @@
+ Tabla  capitulo
+id
+capitulo 
+titulo 
+subtitulo
+video url
+descripcion 
