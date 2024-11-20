@@ -238,3 +238,19 @@ La restauradora nos relata cómo la humedad de la catedral puede ser un gran ene
 
 
 /*en la bbdd de php ya tarde para cambiar pero aqui aun a tiempo, no habia visto que habia un breve texto en expertos abajo del video */
+
+
+
+/* hago unos inserts mas para probar algunas consultas*/
+
+INSERT INTO `expertos` (`id_expertos`, `nombre_experto`, `funcion`, `video`, `aparece_en`) VALUES ('2', 'Enrique Barrio', 'Maestro vidriero. Ha restaurado y recreado vidrieras en la catedral', 'https://youtu.be/fQ_t4d-z7vM', 'Capítulo V: Las vidrieras');
+
+
+
+INSERT INTO `expertos` (`id_expertos`, `nombre_experto`, `funcion`, `video`, `aparece_en`) VALUES ('8', 'Óscar Laguna', 'Organero de la catedral de Burgos\r\n\r\n', 'https://youtu.be/HlRypPam6wc', 'Capítulo VI: La música');
+
+
+/************************consulta de comprobacion ******************/
+
+
+SELECT * FROM `expertos` WHERE id_expertos < 4;
