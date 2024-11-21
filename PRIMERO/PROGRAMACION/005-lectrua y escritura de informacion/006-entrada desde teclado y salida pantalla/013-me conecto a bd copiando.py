@@ -3,9 +3,11 @@ from flask import Flask #importamos libreria que permite crear miniservidor web
 aplicacion = Flask(__name__) #creo servidor web
 
 servidor = "localhost"          #creo variable que apunta mi servidor 
-usuario = "ex"       #variable para almacenar mi usuario anteriormente creado
-contrasena = "miempresa"    ##lo mismo con los siguientes datos 
-base_de_datos = "miempresa"
+usuario = "proyect"       #variable para almacenar mi usuario anteriormente creado
+contrasena = "proyect"    ##lo mismo con los siguientes datos 
+base_de_datos = "ex bbdd"
+
+
 
 conexion = mysql.connector.connect(     #establezco conexion con la bd con los datos anteriores
     host=servidor,
@@ -15,8 +17,10 @@ conexion = mysql.connector.connect(     #establezco conexion con la bd con los d
 )
 
 @aplicacion.route('/')                          #creo escuchador para que este pendiente cuando alguien entre en la raiz
+
 def inicio():                                    #defino funcion
-    peticion = "SELECT * from CLIENTES;"    #preparp peticion
+
+    peticion = "SELECT * from capitulos;"    #preparp peticion
 
 
     cursor = conexion.cursor()                  #una peticion en python requiere un cursor
