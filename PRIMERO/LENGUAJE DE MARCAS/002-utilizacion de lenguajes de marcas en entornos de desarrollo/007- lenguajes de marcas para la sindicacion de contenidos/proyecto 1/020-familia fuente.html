@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head lang="es">
+    <title>Login app</title>
+    <meta charset="utf-8">
+    <style>
+      html,body{
+        padding:0px;margin:0px;
+        background:url(fondo.jpg);
+        background-size:cover;
+        background-position:middle middle;
+        height:100%;
+      }
+      main{
+        width:500px;
+        height:600px;
+        background:rgba(255,255,255,0.2);
+        box-sizing:border-box;
+        padding:20px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-250px;
+        margin-top:-300px;
+        backdrop-filter:blur(15px);
+        text-align:center;
+        color:white;
+        font-family:sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form> 
+        <h1>Iniciar sesión</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Contraseña">
+        <input type="checkbox">Recordar
+        <a href="recordar.php">Olvidé la contraseña</a>
+        <input type="submit" value="Acceder">
+        <p>No tengo cuenta</p>
+        <a href="crear.php">Crear una</a>
+      </form>
+    </main>
+  </body>
+</html>

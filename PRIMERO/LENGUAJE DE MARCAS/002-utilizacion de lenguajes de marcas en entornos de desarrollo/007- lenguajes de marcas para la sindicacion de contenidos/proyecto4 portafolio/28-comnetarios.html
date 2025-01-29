@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> PORTAFOLIO </title>
+        <meta charset="utf-8">
+        <style>
+
+            body,html{
+                padding: 0px;
+                margin:0px;
+                background:indigo;
+                color:peru;
+                width:100%;
+                height:100%;
+
+            }
+
+            button{
+                position: absolute;
+                z-index: 1000;
+                background:indigo;
+                color:white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+
+            }       
+
+            #anterior{
+                left: 10px;
+                top: 50%;
+                margin-top: -25px;
+            }
+
+            #posterior{
+                right:  10px;
+                top: 50%;
+                margin-top: -25px;
+
+            }
+
+
+            article{
+                position:absolute;
+                top:0px;
+                left:0px;
+                width:100%;
+                height:100%;
+                border:0px solid grey;
+                display:none;               /* Escondo todas las paginas */
+                font-size:64px;
+                box-sizing:border-box;
+                padding:40px;
+            }
+
+            article{
+                font-family: sans-serif;
+                background-size: cover;
+            }
+
+
+            article h1{
+                font-size: 40px;
+            }
+
+            article p {
+                font-size: 15px;
+                text-align: justify;
+            }
+
+            article .texto{
+                width: 30%;                 /* ancho del 30% */
+                backdrop-filter: brightness(0.5) blur(5px); /*  filtro difuminado y oscurecido*/
+                box-sizing: border-box;             /* Los limites crecen hacia dentro */
+                padding: 30px;        /*Le pongo un margen interior de 30 pixeles   */
+                color: black;            /* color de texto negro  */
+                border: 1px solid white;        /* pongo borde de 1 pixel blanco */
+                height: 100%;        /*ocupa todo el alto de la pagina  */
+                border-radius: 10px;        /* hacemos que el borde se redondeado */
+                text-shadow:0px 2px 4px rgba(0,0,0,0.6);        /* ponemos osmbra arrojada */
+
+            }
+
+            .aparece{
+                animation: animaparece 1s;        /* la animacion dura 1s */
+                animation-fill-mode: forwards;        /* cuando acaba la animacion se queda en el ultimo fotoframa */
+
+            }
+
+            .desaparece{
+                animation: animadesaparece 1s;        /*  */
+                animation-fill-mode: forwards;        /*  */
+
+            }
+            
+            @keyframes animaparece {      /*  define la animacion de aparicion*/
+                0% {          /*cuando empieza la animacion ...  */
+                    opacity: 0;       /* opacidad es 0 */
+                    filter: blur(5px);      /* desenfoque es de 5px */
+                    
+                 }
+                100%{             /* cuando acaba  */
+                    opacity: 1;       /* opacidad es 1  */
+                    filter: blur(0px);      /* no hay desenfoque */
+                          /*  */
+                    }
+                
+            }
+
+
+            @keyframes animadesaparece {
+                0% {
+                    opacity: 1; /* opacidad es 1  */
+                    filter: blur(0px);   /* no hay desenfoque */
+                    
+                }
+                100%{
+                    opacity: 0;     /* opacidad es 0 */
+                    filter: blur(5px);   /* desenfoque es de 5px */
+                
+                }
+                
+            }
+
+            main{
+            width:100%;             /*  anchura es del 100*/
+            height:100%;                     /* altura es del 100 */
+            background:url(https://pastisseriatorrent.com/wp-content/uploads/2024/09/LOGO-HORIZONTAL.png);              /*  pongo imagen de fondo*/
+            background-repeat:no-repeat;                 /* que no se repitra el fondo  */
+            background-position:center center;               /* centrar el fondo */
+            filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white) drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);              /* filtro de brillo al fondo */
+             }
+    </style>
+
+
+          </style>
+    </head>
+
+    <body>
+        <nav>
+            <button id="anterior"> <-</button>
+            <button id="posterior">-></button>
+
+        </nav>
+
+        <main>
+           <article id="pagina1" style="background: url(imagenes/1.png); background-size: cover;">
+                <div class="texto">
+                    <h1>titulo de la pieza 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto dolorem molestiae a ducimus nobis quaerat ratione, rem quas illo aliquam fugit voluptate officiis praesentium quasi adipisci qui minus odit? Quo, enim. Ratione, fugit exercitationem.</p>
+                </div>
+           </article>
+
+
+           <article id="pagina2" style="background: url(imagenes/2.png); background-size: cover;">
+                <div class="texto">
+                    <h1>titulo de la pieza 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto dolorem molestiae a ducimus nobis quaerat ratione, rem quas illo aliquam fugit voluptate officiis praesentium quasi adipisci qui minus odit? Quo, enim. Ratione, fugit exercitationem.</p>
+                </div>
+           </article>
+
+
+
+           <article id="pagina3" style="background: url(imagenes/3.png); background-size: cover;">
+                <div class="texto">
+                    <h1>titulo de la pieza 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto dolorem molestiae a ducimus nobis quaerat ratione, rem quas illo aliquam fugit voluptate officiis praesentium quasi adipisci qui minus odit? Quo, enim. Ratione, fugit exercitationem.</p>
+                </div>
+    
+            </article>
+
+
+           <article id="pagina4" style="background: url(imagenes/4.png); background-size: cover;">
+                <div class="texto">
+                    <h1>titulo de la pieza 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto dolorem molestiae a ducimus nobis quaerat ratione, rem quas illo aliquam fugit voluptate officiis praesentium quasi adipisci qui minus odit? Quo, enim. Ratione, fugit exercitationem.</p>
+                </div>
+
+           </article>
+
+
+           <article id="pagina5" style="background: url(imagenes/5.png); background-size: cover;">
+                <div class="texto">
+                    <h1>titulo de la pieza 5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto dolorem molestiae a ducimus nobis quaerat ratione, rem quas illo aliquam fugit voluptate officiis praesentium quasi adipisci qui minus odit? Quo, enim. Ratione, fugit exercitationem.</p>
+                </div>
+           </article>
+        </main>
+
+        <script>
+            var pagina = 1;             //cuando inicia estamos en la pagina 1
+            var numpaginas = document.querySelectorAll("article").length
+            
+            console.log("Ahora estoy en la pagina ",pagina)
+            document.querySelector("#pagina"+pagina).style.display = "block" /* como la variable vale 1 solo muestra la pagina 1*/
+
+            document.querySelector("#anterior").onclick = function(){
+                borrarPaginas()
+
+                           //cada click se retrocede de valor
+                if(pagina > 1 ){
+                    pagina--;
+                }
+        
+
+            } //cundo pulso el anterior se restra 1 pagina en la consola
+
+
+            document.querySelector("#posterior").onclick = function(){
+               
+                borrarPaginas()
+                     //le sumo una unidad a la pagina 
+                                //NO SE SUMA EN LA FUNCION SINO CUANDO SE HACE CLICK
+
+                if (pagina < numpaginas) {
+                    pagina++; 
+                }
+               // muestraPagina()
+                
+            }//cuando pulso el posterior se suma 1 pagina en la consola
+
+
+            function borrarPaginas(){
+                document.querySelector("#pagina"+pagina).classList.add("desaparece")
+
+                setTimeout(function(){
+                    let paginas = document.querySelectorAll("article")
+                    paginas.forEach(function(pagina){ //recorre las paginas 1 a 1 
+                        pagina.style.display = "none"   //oculto todas las paginas
+                        pagina.classList.remove("desaparece")
+                        pagina.classList.remove("aparece")
+                })
+                muestraPagina()                 //muestra la pagina que toca
+
+
+                },1000)         //tiempo de espera es de 1 segundo pero se mide en milisegundos
+                
+
+            }
+
+            function muestraPagina(){
+
+
+                document.querySelector("#pagina"+pagina).style.display = "block" /* muestro la pagina*/
+                document.querySelector("#pagina"+pagina).classList.add("aparece")   // a la nueva pagina le pongo el estilo de animacion de aparecer
+
+
+
+                console.log("ahora estoy en la pagina ", pagina)    //la pagina correspondiente
+
+
+            }
+
+
+        </script>
+
+        
+    </body>
+
+   
+
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> PORTAFOLIO </title>   
+        <meta charset="utf-8">     
+        <style>     
+             
+            body,html{                /*SELECIONAMOS BODY Y HTML*/      
+                margin:0px;                             /*LE QUITO MARGEN EXTERIOR*/
+                padding: 0px;                       /*  QUITO MARGEN INTERIOR*/
+                background:moccasin;        /*FONDO COLOR MOCASIN*/    
+                color:peru;     /*FRENTE COLOR PEUR*/
+                width:100%;     /*OCUPA TODO EL ANCHO DEL NAVEGADOR*/
+                height:100%;        /*OCUPA TODO EL ALTO DEL NAVEGADOR*/
+                    
+            }      
+                
+            button{     /**/
+                position: absolute;     /* SE POSICIONA ABSOLUTA PARA MOVERLOS POR LA PANTALLA*/
+                z-index: 1000;      /* LOS PONGO DELANTE DE TODO*/
+                background:peru;        /**/
+                color:moccasin;     /**/
+                width: 40px;        /* ANCHURA DE 50 PX*/
+                height: 40px;       /*ANCHURA DE 50 PX*/
+                border-radius: 50px;        /* BORDER REDONDO*/
+                line-height: 50px;      /*ALTURA DE LINEA DE 50 PX*/
+                text-align: center;     /* EL TEXTO ESTA CENTRADO*/
+                font-size: 20px;        /* TAMAÑO DE 20PX */
+                font-weight: bold;      /* LA FUENTE ES NEGRA */
+                top: 50%;       /*Y A MITAD DE PAGINA*/
+            }               /**/
+                /**/
+            #anterior{      /* SOLO PARA EL BOTON IZQ*/
+                left: 10px;     /*ESTA A 10 PX DE LA IZQUIERDA*/
+        
+                margin-top: -20px;      /*LO CENTRO EN VERTICAL*/
+            }       /**/
+                /**/
+            #posterior{     /**/
+                right:  10px;       /* ESTA A 10 PX DE LA DERECHA*/
+            
+                margin-top: -20px;      /**/
+                    /**/
+            }       /**/
+                /**/
+                /**/
+            article{        /**/
+                position:absolute;      /*OCUPA TODO EL ANCHO DEL NAVEGADOR*/
+                top:0px;        /*ESTA A 0 PX DEL TOPE DEL NAVEGADOR*/
+                left:0px;       /*Y 0 PX DEL TOPE IZQUIERDO*/
+                width:100%;     /* ACNHURA DEL 100%*/
+                height:100%;        /* ALTURA DEL 100*/
+                border:0px solid grey;      /**/
+                display:none;               /* Escondo todas las paginas */
+                font-size:64px;     /**/
+                box-sizing:border-box;
+                padding:40px;
+            }
+          </style>
+    </head>
+
+    <body>
+        <nav>
+            <button id="anterior"> <-</button>
+            <button id="posterior">-></button>
+
+        </nav>
+
+        <main>
+           <article id="pagina1">esta es la pagina 1</article>
+           <article id="pagina2">esta es la pagina 2</article>
+           <article id="pagina3">esta es la pagina 3</article>
+           <article id="pagina4">esta es la pagina 4</article>
+           <article id="pagina5">esta es la pagina 5</article>
+        </main>
+
+        <script>
+            var pagina = 1;             //cuando inicia estamos en la pagina 1
+            var numpaginas = document.querySelectorAll("article").length
+            
+            console.log("Ahora estoy en la pagina ",pagina)
+            document.querySelector("#pagina"+pagina).style.display = "block" /* como la variable vale 1 solo muestra la pagina 1*/
+
+            document.querySelector("#anterior").onclick = function(){
+                borrarPaginas()
+
+                           //cada click se retrocede de valor
+                if(pagina > 1 ){
+                    pagina--;
+                }
+                muestraPagina()
+
+            } //cundo pulso el anterior se restra 1 pagina en la consola
+
+
+            document.querySelector("#posterior").onclick = function(){
+               
+                borrarPaginas()
+                     //le sumo una unidad a la pagina 
+                                //NO SE SUMA EN LA FUNCION SINO CUANDO SE HACE CLICK
+
+                if (pagina < numpaginas) {
+                    pagina++; 
+                }
+                muestraPagina()
+                
+            }//cuando pulso el posterior se suma 1 pagina en la consola
+
+
+            function borrarPaginas(){
+                let paginas = document.querySelectorAll("article")
+                paginas.forEach(function(pagina){ //recorre las paginas 1 a 1 
+                pagina.style.display = "none"   //oculto todas las paginas
+                })
+             
+
+            }
+
+            function muestraPagina(){
+
+
+                document.querySelector("#pagina"+pagina).style.display = "block" /* muestro la pagina*/
+                console.log("ahora estoy en la pagina ", pagina)    //la pagina correspondiente
+
+
+            }
+
+
+        </script>
+
+        
+    </body>
+
+   
+
+
+</html>

@@ -1,6 +1,0 @@
-Estoy utilizando como entorno de desarrollo visual studio code, he probado diferentes entornos de
-desarrollo y se me hace mas cómodo y visual el vsc, ademas de que puedes modificar a nivel visual
-varias cosas, tambien puedes descargar pluggins por si las necesitas, asi como me descargué el 
-pluggin de python para que reconociera y ejecutara el programa en la consola de vsc.
-
-

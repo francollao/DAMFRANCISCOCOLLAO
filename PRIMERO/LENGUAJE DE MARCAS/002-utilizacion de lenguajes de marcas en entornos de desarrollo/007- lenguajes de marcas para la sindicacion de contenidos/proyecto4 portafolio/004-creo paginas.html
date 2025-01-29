@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> PORTAFOLIO </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <nav>
+            <button id="anterior"> <-</button>
+            <button id="posterior">-></button>
+
+        </nav>
+
+        <main>
+           <article id="pagina1">esta es la pagina 1</article>
+           <article id="pagina2">esta es la pagina 2</article>
+           <article id="pagina3">esta es la pagina 3</article>
+           <article id="pagina4">esta es la pagina 4</article>
+           <article id="pagina5">esta es la pagina 5</article>
+        </main>
+
+        <script>
+            var pagina = 1;             //cuando inicia estamos en la pagina 1
+            document.querySelector("#anterior").onclick = function(){
+                pagina--;
+                console.log("ahora estoy en la pagina ", pagina)
+
+            } //cundo pulso el anterior se restra 1 pagina en la consola
+
+
+            document.querySelector("#posterior").onclick = function(){
+                pagina++;
+                console.log("ahora estoy en la pagina ", pagina)
+
+            }//cuando pulso el posterior se suma 1 pagina en la consola
+
+
+
+        </script>
+
+        
+    </body>
+
+   
+
+
+</html>
