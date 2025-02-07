@@ -1,0 +1,34 @@
+#carrusel1 article{
+width: 1024px;
+min-height: 300px;
+background: blue;
+color: white;
+display: inline-block;
+padding: 10px;
+box-sizing: border-box;
+
+}
+#carrusel{
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+#carrusel1{
+    width: 1000%;
+    animation: muevecadapoco 30s; 
+    position: relative;
+
+}
+
+@keyframes muevecadapoco {
+    0%{left: 0px;}
+    5%{left: -1024px;}
+    10%{left: -1024px;}
+    15%{left: -2048px;}
+    20%{left: -2048px;}
+    25%{left: -3072px;}
+    30%{left: -3072px;}
+    35%{left: -4096px;}
+    40%{left: -4096px;}
+}
