@@ -5,6 +5,8 @@
     color:blue;
 	box-sizing:border-box;
 	padding:40px;
+	background-position: center !important;
+
 }
 .heroe h3{
 	font-size:3em;
