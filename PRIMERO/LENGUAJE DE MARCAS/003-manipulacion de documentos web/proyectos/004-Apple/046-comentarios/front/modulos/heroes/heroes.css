@@ -1,17 +1,27 @@
 .heroe{
-    text-align: center;
+    text-align: center ;
     min-height: 400px;
-    background:  blue;
-    color:white;
+    background: blue ;
+    color:blue;
 	box-sizing:border-box;
 	padding:40px;
+	background-position: center !important;
+
 }
-.heroe h3,.heroe h4{
+.heroe h3{
 	font-size:3em;
 	padding:0px;
 	margin:0px;
 	margin-bottom:10px;
 	font-weight:normal;
+}
+.heroe h4{
+	font-size:2em;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	font-weight:normal;
+
 }
 .heroe button{
 	padding:20px;
@@ -21,4 +31,3 @@
 	background:none;
 	color:white;
 }
- 
