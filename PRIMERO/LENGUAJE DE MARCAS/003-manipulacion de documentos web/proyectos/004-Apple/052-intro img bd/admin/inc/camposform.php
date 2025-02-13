@@ -11,9 +11,9 @@
 
 	while ($fila = $resultado->fetch_assoc()) {			// Para cada resultado obtenido
 		echo "<input ";
-		if($fila['Field'] == "Identificador"){
+		if($fila['Field'] == "identificador"){
 			echo " type='hidden' ";
-		}else if(str_contains($fila['Field'],"imagen")){
+		}else if(str_contains($fila["Field"],"imagen")){
 			echo " type='file' ";
 		}
 		else{
