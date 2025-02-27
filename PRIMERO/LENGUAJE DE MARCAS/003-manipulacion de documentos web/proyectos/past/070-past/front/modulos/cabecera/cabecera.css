@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html,body{
+    padding:0px;
+    margin:0px;
+}
+header{
+    height:80px;				/* Altura de la barra */
+    position:fixed;
+    top:0px;
+    width:100%;
+    background: rgb(255, 187, 98);
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+    transition: all 1s;
+    z-index: 1000000;
+    font-size: 20px;
+    
+    overflow: hidden;
+}
+
+header:hover{
+    height: 300px;
+
+
+}
+header .contenedor{
+    width:1024px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+}
+header .contenedor img{
+    width:95px;
+    height: 95px;
+    display:inline-block;
+    margin-top: -20px;
+}
+header .contenedor nav{
+    display:inline-block;
+    vertical-align:top;
+
+}
+header .contenedor ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+    height: 120px;
+    margin-top: 15px;
+}
+header .contenedor nav ul li{
+    display:inline-block;
+    margin:0px 10px;
+    line-height:44px;
+    padding-right: 20px;
+    font-family: 'Poppins', Times, serif;
+}
+header .contenedor nav ul li a{
+    text-decoration:none;
+    color:inherit;
+}
+
+#supermenu{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    text-align: left;
+    margin-top: -30px;
+
+
+}
+
+#supermenu .columna{
+    width: 25%;
+}
+
+#supermenu ul{
+
+    list-style-type: none;
+
+}
+
+#supermenu ul li {
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+#productos ul{
+    list-style: none;
+}
+
+.columna h3{
+    font-size: 20px;
+}

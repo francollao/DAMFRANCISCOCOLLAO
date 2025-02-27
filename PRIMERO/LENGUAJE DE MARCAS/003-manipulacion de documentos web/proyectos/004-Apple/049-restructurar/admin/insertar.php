@@ -4,6 +4,9 @@
     include "error.php";
     include "config.php";
 
-    $peticion = "SELECT * FROM ".$_GET['tabla'];	//selecciono todo de una tabla dinamica
+    $peticion = "INSERT INTO
+    ".$_GET['tabla'].
+    "VALUES()"
+    ;	//selecciono todo de una tabla dinamica
     $resultado = $conexion->query($peticion);	//ejecuto peticion contra bd
 ?>

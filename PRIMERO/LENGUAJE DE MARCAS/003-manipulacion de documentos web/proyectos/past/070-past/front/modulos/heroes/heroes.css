@@ -1,0 +1,43 @@
+.heroe{
+    text-align: center ;
+    min-height: 450px;
+    background: blue ;
+    color:rgb(255, 187, 98);
+	box-sizing:border-box;
+	padding:40px;
+	background-position: center !important;
+
+}
+.heroe h3{
+	font-size:3em;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	font-weight:normal;
+	margin-top: 100px;
+}
+.heroe h4{
+	font-size:2em;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	font-weight:normal;
+
+}
+.heroe button{
+	padding:20px;
+	border:2px solid white; 
+	border-radius:40px;
+	width:200px;
+	background: rgba(255, 255, 255,0.6),255,255,0.7;
+	color:black;
+	margin: 10px;
+}
+
+.heroe h3, .heore h4{
+	
+	text-shadow: 0px 2px 10px rgba(0, 0, 0,0.99);
+
+
+
+}

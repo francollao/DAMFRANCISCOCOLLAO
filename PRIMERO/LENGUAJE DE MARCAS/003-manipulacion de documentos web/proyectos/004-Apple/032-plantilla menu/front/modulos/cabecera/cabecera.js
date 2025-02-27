@@ -15,5 +15,4 @@ secciones.forEach(function(seccion) {
     cabecera.appendChild(instancia)
 }
 
-
 )

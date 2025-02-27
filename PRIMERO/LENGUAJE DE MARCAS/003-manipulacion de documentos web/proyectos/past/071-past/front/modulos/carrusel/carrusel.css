@@ -1,0 +1,107 @@
+body {
+    overflow-x: hidden;
+    margin: 0;  /* Eliminar márgenes para evitar desbordamiento */
+}
+#carrusel1 article{
+    width: 1024px;
+    min-height: 350px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    background-color:  rgb(255, 187, 98);
+    border-radius: 50px;
+    
+    }
+    #carrusel1 article h3{
+        text-align: center;
+        font-size: 80px;
+        margin-top: 50px;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0,0.99);
+        color: orangered;
+    }
+    #carrusel1 article button{
+        color: orangered;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 80px;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0,0.99);
+    }
+
+
+
+
+    #carrusel{
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    
+    #carrusel1{
+        width: 1000%; 
+        position: relative;
+        left: 0px;
+        transition: all 2s;
+    
+    }
+    
+    @keyframes muevecadapoco {
+        0%{left: 0px;}
+        5%{left: -1024px;}
+        10%{left: -1024px;}
+        15%{left: -2048px;}
+        20%{left: -2048px;}
+        25%{left: -3072px;}
+        30%{left: -3072px;}
+        35%{left: -4096px;}
+        40%{left: -4096px;}
+    }
+    
+    .punto{
+        width: 10px;
+        height: 10px;
+        background: grey;
+        border-radius: 20px;
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    #botonera{
+        text-align: center;
+    }
+    
+    .animado1{
+        animation: muevecadapoco 30s;
+    
+    
+    }
+
+/*
+@media screen and (max-width: 700px){
+
+	#sect-carru{
+		width: 500px;
+        height: 250px;
+        padding: 10px;
+
+	}
+
+    #carrusel1 article{
+        width: 400px;
+        min-height: 200px;
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: auto;
+        background-color:  rgb(255, 187, 98);
+        border-radius: 50px;
+        
+        }
+    
+	
+}*/
+ 

@@ -1,0 +1,90 @@
+#carrusel1 article{
+width: 1024px;
+min-height: 350px;
+background: blue;
+color: white;
+display: inline-block;
+padding: 10px;
+box-sizing: border-box;
+
+}
+#carrusel{
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+#carrusel1{
+    width: 1000%; 
+    position: relative;
+    left: 0px;
+    transition: all 2s;
+
+}
+
+@keyframes muevecadapoco {
+    0%{left: 0px;}
+    5%{left: -1024px;}
+    10%{left: -1024px;}
+    15%{left: -2048px;}
+    20%{left: -2048px;}
+    25%{left: -3072px;}
+    30%{left: -3072px;}
+    35%{left: -4096px;}
+    40%{left: -4096px;}
+}
+
+#carrusel2{
+    width: 1000%;
+    position: relative;
+
+}
+#carrusel2 article{
+    width: 340px;
+    min-height: 300px;
+    background: blue;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+
+@keyframes muevecontinuo {
+    0%{left: 0px;}
+    5%{left: -1024px;}
+    10%{left: -1024px;}
+    15%{left: -2048px;}
+    20%{left: -2048px;}
+    25%{left: -3072px;}
+    30%{left: -3072px;}
+    35%{left: -4096px;}
+    40%{left: -4096px;}
+}
+
+.punto{
+    width: 10px;
+    height: 10px;
+    background: grey;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#botonera{
+    text-align: center;
+}
+
+.animado1{
+    animation: muevecadapoco 30s;
+
+
+}
+.animado2{
+    animation: muevecontinuo 90s; 
+    animation-timing-function: linear;
+
+
+}
